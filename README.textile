@@ -1,21 +1,18 @@
-!http://clients.fudgestudios.com/chester.jpg!
+h1. Boiler
 
-h1. Bort
-
-Bort is a base Rails 2.1 application that makes creating new projects easier and faster. Bort is developed and maintained by "Fudge Studios":http://www.fudgestudios.com, "Jim Neath":http://jimneath.org and "Matt Hall":http://matthall.wordpress.com
-
-If you have any suggestions for improvements then feel free to leave a request on "User Voice":http://bort.uservoice.com
+Boiler is a base Rails 2.1 application that makes creating new projects easier and faster. It was originally cloned from Bort (by "Fudge Studios":http://www.fudgestudios.com). Boiler is developed and maintained by "Coreguardian":http://www.coreguardian.org
 
 h2. Install
 
-* Download and unzip Bort
+* Download and unzip Boiler (or clone the Github Repo)
 * Edit the database.yml and the settings.yml files
+* Add your own "Hoptoad":http://www.hoptoadapp.com key
 * Rake db:migrate
-* Have a brew and celebrate
+* Build an awesome app.
 
 h2. Plugins Installed
 
-Bort comes with a few commonly used plugins installed and already setup.
+Boiler comes with a few commonly used plugins installed and already setup. The major difference between Bort and  Boiler is that Boiler uses Hoptoad rather thanException Notifier.
 
 h3. RESTful Authentication
 
@@ -26,26 +23,25 @@ The AASM plugin comes pre-installed. RESTful Authentication is also setup to use
 
 h3. User Roles
 
-Bort now comes with "Role Requirement":http://code.google.com/p/rolerequirement/ by Tim Harper. A default 
+Boiler like Bort comes with "Role Requirement":http://code.google.com/p/rolerequirement/ by Tim Harper. A default 
 admin role is predefined along with a default admin user. See the migrations for the admin login details.
 
 h3. Open ID Authentication
 
-Bort, as of 0.3, has Open ID integrated with RESTful Authentication. Rejoice!
+Boiler has Open ID integrated with RESTful Authentication. Why? Because Bort hasOpen ID built in. Have you not got the message yet that this is mostly Bort witha few small changes.
 
 h3. Will Paginate
 
-We use will_paginate in pretty much every project we use, so Bort comes with it pre-installed.
+will_paginate is a kick arse pagination plugin for rails. For more information check "here":http://github.com/mislav/will_paginate/wikis
 
 h3. Rspec & Rspec-rails
 
-You should be testing your code, so Bort comes with Rspec and Rspec-rails already installed so you're
+You should be testing your code, so Boiler comes with Rspec and Rspec-rails already installed so you're
 ready to roll.
 
-h3. Exception Notifier
+h3. Hoptoad Notifier
 
-You don't want your applications to crash and burn so Exception Notifier is already installed to let 
-you know when everything goes to shit.
+Exception Notifier is good but Hoptoad Notifer is better
 
 h3. Asset Packager
 
@@ -68,15 +64,11 @@ over easily.
 
 h2. Capistrano Recipe
 
-Bort comes ready to rock capistrano. The recipe that is setup is based on using git and passenger. It's ready
+Boiler comes ready to rock capistrano. The recipe that is setup is based on using git and passenger. It's ready
 to go with multistage deployments. It deploys to the production config by default, so if you don't need it
 you can ignore it. Just update config/deploy/production.rb with your deployment settings.
 
-More info on capistrano-ext/multistage deployments can be found here: http://weblog.jamisbuck.org/2007/7/23/capistrano-multistage
-
-h2. Uses the Database for Sessions
-
-Bort is setup to use the database to store sessions by default. 
+More info on capistrano-ext/multistage deployments can be found here: http://weblog.jamisbuck.org/2007/7/23/capistrano-multistage 
 
 h2. Misc 
 
@@ -90,4 +82,4 @@ h2. Misc
 
 h2. Credits
 
-Bort put together by people at "Fudge":http://www.fudgestudios.com/ 
+Bort put together by people at "Fudge":http://www.fudgestudios.com/ (thank you so much!) 
